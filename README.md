@@ -13,5 +13,5 @@ jar tf /usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar | sed  -e 's#^src/##
 For my maven download cache I use
 
 ```bash
-find ~/.m2/repository/ -name *.jar -type f -exec jar -tf {} \; | sed  -e 's#^src/##' > jdk.jmplst
+find ~/.m2/repository/ -name *.jar -type f -exec jar -tf {} \; | sed  -e 's#^src/##' > mvcache.jmplst
 ```
